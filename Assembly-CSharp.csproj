@@ -64,7 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\List.cs" />
+    <Compile Include="Assets\Scripts\Prueba.cs" />
     <Compile Include="Assets\Scripts\SpaceShipScript.cs" />
+    <Compile Include="Assets\Scripts\torpedo.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/arturo/Desktop/project2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
