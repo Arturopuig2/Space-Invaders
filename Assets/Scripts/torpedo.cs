@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class torpedo : MonoBehaviour
 {
-
-    public float livingTime = 3f;
-
     // Start is called before the first frame update
     void Start()
     {
-      //  Destroy(this.gameObject, livingTime);
     }
-
     // Update is called once per frame
     void Update()
     {
-        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("he chocado con el muro: "+collision.gameObject.name);
+        Destroy(gameObject);
     }
 }

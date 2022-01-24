@@ -10,7 +10,8 @@ public class SpaceShipScript : MonoBehaviour
     public int forceTorpedo;
     public GameObject torpedo;
     public GameObject clone;
-    public float TiempoDeVida=1f;
+    public float TiempoDeVida=2f;
+    public bool cloneFuera = true;
 
     // Start is called before the first frame update
     void Start()
@@ -29,27 +30,23 @@ public class SpaceShipScript : MonoBehaviour
         myRB.position = new Vector2(xPos, myRB.position.y);
 
 
-        if (Input.GetButton("Jump"))
+        if (Input.GetButton("Jump")&&!clone)
             {
             Debug.Log("He pulsado disparo");
             Vector2 posTorpedo = new Vector2(transform.position.x, transform.position.y+1.5f);
 
-
-            if (!clone)
-            {
                 clone = Instantiate(torpedo, posTorpedo, Quaternion.identity); //Creamos un GO que es la instanciación del Torpedo.
                 Rigidbody2D cloneRB = clone.GetComponent<Rigidbody2D>(); //Creamos una variable de tipo Rigidbody2D con las cualidades del RB del clone.
                 Vector2 direccion = new Vector2(0f, 1f);
                 cloneRB.velocity = direccion * forceTorpedo;
-                Destroy(clone, TiempoDeVida);
+              //  Destroy(clone, TiempoDeVida); //Destruye el clone después del tiempo de vida.
             }
-
         }
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("LA NAVE ENTRA AL ÁREA");
+
     }
 
 }
