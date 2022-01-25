@@ -26,7 +26,7 @@ public class SpaceShipScript : MonoBehaviour
     {
         float movement = Input.GetAxis("Horizontal");
         myRB.velocity=(transform.right*movement*force);
-        float xPos = Mathf.Clamp(myRB.position.x, -3f, 3f);
+        float xPos = Mathf.Clamp(myRB.position.x, -5f, 5f);
         myRB.position = new Vector2(xPos, myRB.position.y);
 
 
