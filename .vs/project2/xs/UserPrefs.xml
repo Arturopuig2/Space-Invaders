@@ -1,16 +1,16 @@
 ﻿<Properties StartupConfiguration="{1E4ABDF9-CA74-8D88-2BB5-7878F04C3345}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SpaceShipScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy.cs">
     <Files>
       <File FileName="Assets/Scripts/SpaceShipScript.cs" Line="44" Column="10" />
-      <File FileName="Assets/Scripts/torpedo.cs" Line="22" Column="1" />
-      <File FileName="Assets/Scripts/Prueba.cs" Line="16" Column="1" />
-      <File FileName="Assets/Scripts/ShotScript.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/torpedo.cs" />
+      <File FileName="Assets/Scripts/Prueba.cs" />
+      <File FileName="Assets/Scripts/ShotScript.cs" />
       <File FileName="Assets/Scripts/Enemy.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b4356476-e4ff-4be4-b5d9-d76b8218965a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b5b26605-a96e-4bd8-82c1-8093c9619ca9" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -255,7 +255,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbb0a0f41bf7d46ffb5163141dfe1e8f, type: 3}
@@ -589,6 +589,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyForce: 2
+  direccion: 1
+  enemyPosition: 0
 --- !u!61 &1285204827
 BoxCollider2D:
   m_ObjectHideFlags: 0
