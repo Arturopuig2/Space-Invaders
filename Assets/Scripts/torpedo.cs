@@ -15,7 +15,14 @@ public class torpedo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("he chocado con el muro: "+collision.gameObject.name);
+        //Debug.Log("he chocado con: "+collision.gameObject.name);
+        //Debug.Log("he chocado con: " + collision.gameObject.tag);
         Destroy(gameObject);
+
+        if (collision.gameObject.tag == "Enemigo")
+        {
+            Debug.Log("he chocado con: " + collision.gameObject.tag);
+            Destroy(collision.gameObject);
+        }
     }
 }
