@@ -44,6 +44,7 @@ public class Enemy : MonoBehaviour
 
         void OnCollisionEnter2D(Collision2D collision)
         {
+
         audioSource.PlayOneShot(explosion);
         gameObject.GetComponent<YouWin>().enabled = true;
         Debug.Log("ENEMIGO: Me ha dado el torpedo.");

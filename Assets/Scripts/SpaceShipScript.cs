@@ -31,7 +31,7 @@ public class SpaceShipScript : MonoBehaviour
         myRB.position = new Vector2(xPos, myRB.position.y);
 
 
-        if (Input.GetButton("Jump")&&!clone)
+        if (Input.GetButton("Jump")&&!clone&&!fin)
             {
             //Debug.Log("He pulsado disparo");
             Vector2 posTorpedo = new Vector2(transform.position.x, transform.position.y+1.5f);
@@ -58,20 +58,11 @@ public class SpaceShipScript : MonoBehaviour
             myRB.freezeRotation = true;
             myRB.constraints = RigidbodyConstraints2D.FreezeAll;
             //myRB.constraints = RigidbodyConstraints2D.FreezePositionX;
-            //this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
-            //this.gameObject.SetActive(false);
             Destroy(collision.gameObject);
             Debug.Log("FIN");
-            //fin = true;
-
+            fin = true;
             gameObject.GetComponent<GameOver>().enabled = true;
 
         }
-    }
-
-    public void SacarmensajeGameOver()
-    {
-        
-    }
-    
+    }    
 }

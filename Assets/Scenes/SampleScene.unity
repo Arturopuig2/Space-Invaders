@@ -823,8 +823,8 @@ GameObject:
   - component: {fileID: 1285204825}
   - component: {fileID: 1285204827}
   - component: {fileID: 1285204828}
-  - component: {fileID: 1285204829}
   - component: {fileID: 1285204830}
+  - component: {fileID: 1285204829}
   m_Layer: 0
   m_Name: Enemy_01
   m_TagString: Enemigo
@@ -1062,12 +1062,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285204822}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ebfd5ecee1e945559bac31227999893, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ac15484366254a7682c75d65cf912c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameOverText: {fileID: 1571242077}
+  speed: 0
+  force: 0
+  forceTorpedo: 0
+  torpedo: {fileID: 0}
+  clone: {fileID: 0}
+  TiempoDeVida: 2
+  cloneFuera: 1
+  fin: 0
 --- !u!114 &1285204830
 MonoBehaviour:
   m_ObjectHideFlags: 0
