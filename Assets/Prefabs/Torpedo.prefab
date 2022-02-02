@@ -13,11 +13,10 @@ GameObject:
   - component: {fileID: -1752153476426595537}
   - component: {fileID: -3018857377267680397}
   - component: {fileID: 4856316956022157903}
-  - component: {fileID: 4660169606408356230}
   - component: {fileID: -5160287437706172639}
   m_Layer: 0
   m_Name: Torpedo
-  m_TagString: Untagged
+  m_TagString: Torpedo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,6 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2b829e70d284cf1bc73d9b660771e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 8300000, guid: 74dc385701129417282151e20aa7c7fa, type: 3}
 --- !u!82 &4856316956022157903
 AudioSource:
   m_ObjectHideFlags: 0
@@ -215,18 +215,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4660169606408356230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4398054253147884089}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d12b8965bee4dafa1d3ee754831d3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &-5160287437706172639
 BoxCollider2D:
   m_ObjectHideFlags: 0

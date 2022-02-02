@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class torpedo : MonoBehaviour
 {
+    AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,16 +15,30 @@ public class torpedo : MonoBehaviour
     {
     }
 
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag== "Enemigo")
+        {
+            Debug.Log("TORPEDO: HE DERRIBADO A UN: " + collision.gameObject.tag);
+            audioSource=collision.gameObject.GetComponent<AudioSource>();
+            audioSource.Play();
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log("he chocado con: "+collision.gameObject.name);
-        //Debug.Log("he chocado con: " + collision.gameObject.tag);
+        Debug.Log("TORPEDO: He chocado con  " + collision.gameObject.name);
+
         Destroy(gameObject);
 
-        if (collision.gameObject.tag == "Enemigo")
-        {
-            Debug.Log("he chocado con: " + collision.gameObject.tag);
-            Destroy(collision.gameObject);
-        }
+        //if (collision.gameObject.tag == "Enemigo")
+        //{
+        //    Debug.Log("He chocado con: " + collision.gameObject.tag);
+        //    Destroy(collision.gameObject);
+        //}
     }
 }
