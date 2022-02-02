@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Prueba.cs" />
     <Compile Include="Assets\Scripts\ShotScript.cs" />
     <Compile Include="Assets\Scripts\SpaceShipScript.cs" />
+    <Compile Include="Assets\Scripts\YouWin.cs" />
     <Compile Include="Assets\Scripts\torpedo.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/arturo/Desktop/project2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

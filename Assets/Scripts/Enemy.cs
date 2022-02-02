@@ -12,7 +12,6 @@ public class Enemy : MonoBehaviour
     AudioSource audioSource;
     public AudioClip explosion;
 
-
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -29,7 +28,7 @@ public class Enemy : MonoBehaviour
             enemyForce = enemyForce + 2f;
             transform.Translate(Vector3.down * 0.2f);
            // audioSource.PlayOneShot(explosion);
-            audioSource.Play();
+           // audioSource.Play();
 
 
         }
@@ -45,10 +44,9 @@ public class Enemy : MonoBehaviour
 
         void OnCollisionEnter2D(Collision2D collision)
         {
-        audioSource.Play();
-        //audioSource.PlayOneShot(explosion);
+        audioSource.PlayOneShot(explosion);
+        gameObject.GetComponent<YouWin>().enabled = true;
         Debug.Log("ENEMIGO: Me ha dado el torpedo.");
-
     }
 
 
@@ -57,6 +55,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         enemyRB = GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
@@ -75,6 +74,4 @@ public class Enemy : MonoBehaviour
     //    Debug.Log("he chocado con el margen: " + collision.gameObject.name);
     //    direccion = direccion * -1;
     //}
-
-
 }
