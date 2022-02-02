@@ -26,19 +26,11 @@ public class torpedo : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("TORPEDO: He chocado con  " + collision.gameObject.name);
-
         Destroy(gameObject);
-
-        //if (collision.gameObject.tag == "Enemigo")
-        //{
-        //    Debug.Log("He chocado con: " + collision.gameObject.tag);
-        //    Destroy(collision.gameObject);
-        //}
     }
 }

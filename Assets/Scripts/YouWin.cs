@@ -12,8 +12,6 @@ public class YouWin : MonoBehaviour
     void Start()
     {
         youwin.SetActive(true);
-
-
     }
 
     // Update is called once per frame
